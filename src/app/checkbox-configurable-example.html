@@ -1,3 +1,21 @@
+<h1 style="color:darkslateblue">Material design with Angular2</h1>
+
+<div class="container">
+  <div class="example-container">
+    <mat-form-field>
+      <input matInput placeholder="Enter your email" [formControl]="email" required>
+    </mat-form-field>
+  
+    <mat-form-field>
+    <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+    </mat-form-field>
+    <button mat-raised-button color="primary">Submit</button>
+  </div>
+</div>
+
+
+
 <mat-card>
   <mat-card-content>
     <h2 class="example-h2">Checkbox configuration</h2>
@@ -35,10 +53,9 @@
         I'm a checkbox
       </mat-checkbox>
     </section>
+    <datepicker-overview-example></datepicker-overview-example>
   </mat-card-content>
 </mat-card>
-<div class="container">
-<datepicker-overview-example></datepicker-overview-example></div>
 
 
 
